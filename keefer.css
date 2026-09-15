@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    
+    width: 100%;
+    max-width: 100%;
+ 
+}
+ /* Header section */
+.parent{
+    display: flex;
+    /* height: 500px; */
+    
+    
+ }
+.logo{
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.contact{
+   
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    margin-right: 60px;
+    
+
+    
+    
+}
+.contact h4{
+    color: maroon;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.hrz{
+    
+    height: 3px;
+    width: 96%;
+    margin: 5px 0 5PX 7PX ;
+    background-color: rgb(131, 130, 130);
+}
+
+.contact h2{
+    font-size: 59px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.contact p{
+    font-size: 25px;
+    color: rgb(90, 89, 89);
+}
+
+.nav{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+.navgation{
+display: flex;
+background-color: maroon;
+justify-content: end;
+align-items: center;
+height: 50px;
+width: 100%;
+gap: 40px;
+padding-right: 55px;
+
+
+}
+.navgation a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 21px;
+}
+a:hover{
+    background-color: burlywood;
+}
+
+/* middle section */
+
+.middle{
+    display: flex;
+    
+    
+    
+
+}
+.middle1{
+    /* display: flex; */
+    /* justify-content: start; */
+}
+
+.middle2{
+    background-image:url(./form_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    
+    
+       
+}
