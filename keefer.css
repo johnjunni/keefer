@@ -1,21 +1,21 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 .container{
     
     width: 100%;
-    max-width: 100%;
+    overflow: hidden;
  
 }
  /* Header section */
 .parent{
     display: flex;
-    /* height: 500px; */
-    
     
  }
+
 .logo{
     flex-grow: 1;
     justify-content: flex-end;
@@ -93,6 +93,7 @@ a:hover{
     padding-left:25px ;
     padding-top: 25px;
     position: relative;
+    border: 2px solid black;
    
 }
 .middle1 img{
@@ -220,183 +221,213 @@ a:hover{
         margin-top: 35px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 0px;
+        /* border: 2px solid black; */
+        
 
 }
-.third-left{
-    width: 30%;
+        /* third left */
+ .third-left{
+    width:400px;
     padding-top: 25px;
     padding-left: 28px;
-    
     position: relative;
-    
+    border-right: 1px solid #ccc;
 }
-
 .third-left h3{
     font-size: 28px;
-    color: rgb(78, 78, 78);
 }
 .third-left h3 span{
     color: maroon;
 }
 .third-left h4{
-    color: maroon;
-    padding-left: 2px;
     font-size: 20px;
+    color: maroon;
 }
 .pera1{
-    font-size: 22px;
-    font-weight: 80;
-    margin-bottom: 20px;
+    font-size: 20px;
     margin-top: 15px;
-    
 }
 .pera2{
-    font-size: 22px;
-    font-weight: 80;
-    
+    font-size: 20px;
+    margin-top: 15px;
 }
-
 .img-left img{
+    width: 90px;
+    height: 130px;
     position: absolute;
-    top: 80px;
-    left: 300px;
-    width: 120px;
-    height: 160px;
-    
-    
+    left: 290px;
+    top: 85px;
+} 
+.hr{
+    width: 210px;
+    position: absolute;
+    left: 150px;
+    margin-top: 10px;
 }
 .btn button{
     position: absolute;
-    width: 150px;
+    margin-top: 10px;
+    left: 210px;
     height: 30px;
-    background-color: rgb(170, 16, 16);
-    left: 250px;
-    margin-top: 15px;
+    width: 140px;
+    background-color: rgb(160, 28, 28);
     color: white;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+}
+.btn button img{
+    margin-left: 5px;
+    margin-top: 3px;
+}
 
-}
-.hr{
-    width: 230px;
-    position: absolute;
-    left: 190px;
-    margin-top: 15px;
-    
-}
-.btn img{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-}
-/* third middle */
+                /* third middle */
+
+            
+ 
 .third-middle{
-    
-    width: 30%;
-    padding-top: 25px;
-    padding-left: 28px;
-    
     position: relative;
+    width: 470px;
+    /* border: 1px solid black; */
+    margin-left: 25px;
 }
 .middle-uper{
-    position: absolute;
-    margin-left: 10px;
-}
-
-.middle-uper img{
-    position: absolute;
-    left: 200px;
-    top: -70px;
-    width: 200px;
-    
+    /* width: 100%; */
 }
 .middle-uper h3{
-    font-size: 29px;
-    color: rgb(78, 78, 78);
+    font-size: 25px;
+    margin-top: 25px;
 }
-.middle-uper p{
-    font-size: 18px;
-    font-weight: 100;
-}
-
-.middle-uper span{
+.middle-uper h3 span{
     color: maroon;
 }
-.middle-down{
+.middle-uper p{
+    font-size: 20px;
+}
+.middle-uper-img img{
     position: absolute;
-    top: 150px;
-    margin-top: 45px;
-    
+    left: 280px;
+    top: 25px;
+    width: 170px;
+    height: 100px;
+}
+.middle-uper-hr{
+    width: 210px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.middle-uper-btn button{
+    position: absolute;
+    left: 110px;
+    height: 30px;
+    width: 140px;
+    background-color: rgb(160, 28, 28);
+    color: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+    margin-top: -1px;
+}
+/* third-middle-down */
+.middle-down{
+    position: relative;
+    top: 50px;
+    /* border: 1px solid black; */
 }
 .middle-down h3{
     font-size: 25px;
-    color: rgb(78, 78, 78);
 }
-.middle-down span{
+.middle-down h3 span{
     color: maroon;
 }
-.middle-down p{
-    font-size: 22px;
+.third-right-pera{
+    display: flex;
+    flex-direction: column;
 }
-.middle-down img{
+.middle-down-img img{
     position: absolute;
     width: 180px;
-    margin-left: 260px;
+    height: 120px;
+    left: 270px;
     top: -10px;
 }
+.middle-down-hr{
+    width: 210px;
+    position: absolute;
+    left: 60px;
+    margin-top: 28px;
+}
+.middle-down-btn button{
+    position: absolute;
+    left: 110px;
+    width: 140px;
+    height: 30px;
+    background-color: rgb(160, 28, 28);
+    color: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+    margin-top: 28px;
+}
+        /* third right  */
 
 .third-right{
-     width: 30%;
-    padding-top: 30px;
-    /* padding-left: 28px; */
     position: relative;
-    /* left: 30px; */
+    
 }
 .qqq-img img{
-    width: 130px;
-    position: absolute;
-    top: 40px;
-    /* left:50px */
-    
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        width: 120px;
+        height: 100px;
 }
 .national-img img{
     position: absolute;
-    left: 150px;
-    width: 110px;
+    left: 180px;
+    top: 15px;
+    height: 110px;
+    width: 105px;
 }
 .third-right h3{
     position: absolute;
-    top:150px;
     font-size: 25px;
-    margin-top: 10px;
-    left: -18px;
+    top: 130px;
+    left: 40px;
 }
 .third-right h3 span{
     color: maroon;
-    
 }
 .third-right p{
     position: absolute;
-    top: 230px;
-    font-size: 18px;
-    left: -15px;
+     /* top: 150px; */
+    /* left: 50px; */
 }
-
+.right-hr{
+    position: absolute;
+    width: 210px;
+    top: 220px;
+    left: 80px;
+}
+.right-btn button{
+    position: absolute;
+    left: 250px;
+    top: 220px;
+    height: 30px;
+    width: 140px;
+    background-color: rgb(160, 28, 28);
+    color: white;
+}
 /* Underline */
 
 .underline{
     width: 100%;
-    /* height: 35px; */
+    
     margin-left: 150px;
     margin-top: 110px;
 }
 /* fourth section */
 .sidebar{
-    margin-top: 110px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
 }
-
+                /* side-bar left */
 .sidebar-left{
     
     display: flex;
@@ -406,7 +437,7 @@ a:hover{
 }
 
 .icon-top{
-    margin-top: 50px;
+    margin-top: 5px;
     font-size: 25px;
 }
 .icon-top span{
@@ -414,30 +445,41 @@ a:hover{
 }
 .icon{
     background-color: rgb(136, 126, 126);
-    height: 60px;
+    height: 70px;
+    
     margin-top: 20px;
-    width: 300px;
+    width: 280px;
     box-shadow: 0 10px 5px rgba(0,0,0,0.4);
-    display: flex
+    flex-direction: column;
+    
+    
     
 
 }
 .icon-img{
-    height: 60px;
+    height: 70px;
 }
 .icon-h{
     color: rgb(255, 255, 255);
     margin-left: 5px;
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 35px;
+    margin-top: -70px;
+    padding: 5px 0 0 10px;
+    
     
 }
 .icon-bul{
-    align-self: flex-end;
-    color: white;
-    margin-right: 20px;
-    font-size: 15px;
     
+    color: white;
+    margin-left: 160px;
+    font-size: 15px;
+}
+.icon-bul button{
+    background-color: rgb(136, 126, 126);
+    border: none;
+    color: white;
+    
+    margin:15px 10px 0 0; 
 }
 .icon-bul img{
     margin-bottom: -2px;
@@ -447,9 +489,10 @@ a:hover{
 }
 
 .bottom{
-    margin-top: 35px;
-    font-size: 23px;
-    font-weight: 150;
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 21px;
+    
 }
 .bottom span{
     color: maroon;
@@ -458,30 +501,60 @@ a:hover{
 /* sidebar middle */
 
 .sidebar-middle{
-    
-    margin-left: 120px;
+    width: 60%;
+    margin-left: 60px;
+    padding-right: 30px;
+}
+.sidebar-middle h1{
+    font-size: 38px;
+}
+.sidebar-middle p{
+    margin-top: 30px;
+    line-height: 1.5;
+    font-size: 17px;
 }
 
 /* sidebar right */
 
 .right-icon{
-
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 35px;
 }
 .right-icon h2{
     margin-top: 10px;
-    line-height: 30px;
+    font-size: 27px;
+    color: rgb(78, 78, 78);
 }
 .right-icon span{
             color: maroon;
 }
-.right-icon button{
-    background-color: rgb(179, 35, 35);
-    color: white;
-    height: 20px;
-    width: 120px;
-    font-size: 15px;
+.right-icon p{
+    font-size: 20px;
 }
-
-.right-law-icon{
-    margin: 20px;
+.hrz{
+    width: 200px;
+    border: none;
+    
+}
+.right-icon button{
+    background-color: rgb(167, 38, 38);
+    color: white;
+    height: 30px;
+    width: 120px;
+    border: none;
+    font-size: 15px;
+    margin-left: 45px;
+    margin-top: -5px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.6);
+}
+.right-icon button img{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.right-icon{
+    position: relative;
+    top: 10px;
+    border: 1px solid black;
 }
