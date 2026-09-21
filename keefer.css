@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
 
 .container{
@@ -14,6 +14,10 @@
 .parent{
     display: flex;
     
+ }
+ img{
+    max-width: 100%;
+    height: auto;
  }
 
 .logo{
@@ -42,7 +46,6 @@
 .hrz{
     
     height: 3px;
-    width: 96%;
     margin: 5px 0 5PX 7PX ;
     background-color: rgb(131, 130, 130);
 }
@@ -59,9 +62,6 @@
 
 .nav{
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    
 }
 .navgation{
 display: flex;
@@ -89,37 +89,34 @@ a:hover{
 
 /* middle section */
 
-.middle{
-    padding-left:25px ;
-    padding-top: 25px;
-    position: relative;
-    border: 2px solid black;
-   
+.middle {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 25px;
+    padding: 25px;
 }
-.middle1 img{
-    width: 54%;
+.middle1 img {
+    width: 100%;
     height: 430px;
-    background: url(./gurantee_banner.gif) center / no-repeat;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    
+    object-fit: cover;
 }
 .middle2{
-        width: 41%;
+        width: 100%;
         height: 430px;
         background-image: url(./form_bg.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: absolute;
-        right: 35px;
-        top: 25px;
+        position: relative;
+        right: auto;
+        top: auto;
         box-shadow: 0 10px 20px rgba(0,0,0,0.4);
         
 }
 
 .middle2 h2{
     background-color: maroon;
-    width: 190px;
+    width: 210px;
     color: white;
     padding: 7px;
     font-size: 30px;
@@ -214,212 +211,287 @@ a:hover{
 .Privacy button img{
     padding-left: 5px;
 }
-    /* Third section */
+              /* Third section */
 
 .third-section{
-        width: 100%;
-        margin-top: 35px;
-        display: flex;
-        flex-direction: row;
-        gap: 0px;
-        /* border: 2px solid black; */
-        
+         display: grid;
 
+    grid-template-columns: 1fr 1.2fr 1fr;
+
+    gap: 25px;
+
+    width: 100%;
+
+    margin-top: 40px;
+
+    padding: 0 25px;
 }
         /* third left */
- .third-left{
-    width:400px;
-    padding-top: 25px;
-    padding-left: 28px;
+ .third-left {
     position: relative;
+
+    padding: 25px;
+
     border-right: 1px solid #ccc;
 }
-.third-left h3{
-    font-size: 28px;
+
+.third-left h3 {
+    font-size: 29px;
 }
-.third-left h3 span{
+
+.third-left h3 span {
     color: maroon;
 }
-.third-left h4{
-    font-size: 20px;
+
+.third-left h4 {
+    margin-top: 5px;
+    font-size: 20.5px;
     color: maroon;
 }
-.pera1{
-    font-size: 20px;
+
+.pera1,
+.pera2 {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-right: 80px;
+    
+}
+
+.pera2 {
     margin-top: 15px;
 }
-.pera2{
-    font-size: 20px;
-    margin-top: 15px;
+
+.img-left img {
+    position: absolute;
+    right: 15px;
+    top: 90px;
+    width: 100px;
+    height: 140px;
 }
-.img-left img{
-    width: 90px;
-    height: 130px;
-    position: absolute;
-    left: 290px;
-    top: 85px;
-} 
-.hr{
-    width: 210px;
-    position: absolute;
-    left: 150px;
-    margin-top: 10px;
+
+.hr {
+    width: 55%;
+    margin-left: 150px;
+    margin-top: 20px;
 }
-.btn button{
-    position: absolute;
-    margin-top: 10px;
-    left: 210px;
-    height: 30px;
+
+.btn button {
     width: 140px;
+    height: 32px;
+    margin-left: 180px;
+    margin-top: 0px;
+
+    border: none;
+
     background-color: rgb(160, 28, 28);
     color: white;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-.btn button img{
-    margin-left: 5px;
-    margin-top: 3px;
-}
+
 
                 /* third middle */
 
             
  
-.third-middle{
+.third-middle {
     position: relative;
-    width: 470px;
-    /* border: 1px solid black; */
-    margin-left: 25px;
+
+    width: 100%;
+
+    padding-right: 25px;
+
+    border-right: 1px solid #ccc;
 }
-.middle-uper{
-    /* width: 100%; */
+.middle-uper {
+    position: relative;
+
+    min-height: 180px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ccc;
 }
-.middle-uper h3{
-    font-size: 25px;
-    margin-top: 25px;
+
+.middle-uper h3 {
+    font-size: 32px;
 }
-.middle-uper h3 span{
+
+.middle-uper h3 span {
     color: maroon;
 }
-.middle-uper p{
-    font-size: 20px;
+
+.middle-uper p {
+    width: 55%;
+
+    margin-top: 5px;
+
+    font-size: 22px;
+    line-height: 1.4;
 }
-.middle-uper-img img{
+
+.middle-uper-img img {
     position: absolute;
-    left: 280px;
-    top: 25px;
-    width: 170px;
-    height: 100px;
-}
-.middle-uper-hr{
-    width: 210px;
-    margin-top: 10px;
-    margin-left: 50px;
-}
-.middle-uper-btn button{
-    position: absolute;
-    left: 110px;
-    height: 30px;
-    width: 140px;
-    background-color: rgb(160, 28, 28);
-    color: white;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
-    margin-top: -1px;
-}
-/* third-middle-down */
-.middle-down{
-    position: relative;
-    top: 50px;
-    /* border: 1px solid black; */
-}
-.middle-down h3{
-    font-size: 25px;
-}
-.middle-down h3 span{
-    color: maroon;
-}
-.third-right-pera{
-    display: flex;
-    flex-direction: column;
-}
-.middle-down-img img{
-    position: absolute;
+
+    right: 0;
+    top: 30px;
+
     width: 180px;
     height: 120px;
-    left: 270px;
-    top: -10px;
+
+    object-fit: contain;
 }
-.middle-down-hr{
-    width: 210px;
-    position: absolute;
-    left: 60px;
-    margin-top: 28px;
+
+.middle-uper-hr {
+    width: 55%;
+
+    margin-top: 15px;
 }
-.middle-down-btn button{
-    position: absolute;
-    left: 110px;
+
+.middle-uper-btn button {
     width: 140px;
     height: 30px;
+
+    margin-top: 0px;
+    margin-left: 80px;
+    border: none;
+
     background-color: rgb(160, 28, 28);
     color: white;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
-    margin-top: 28px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* third-middle-down */
+.middle-down {
+    position: relative;
+
+    min-height: 180px;
+
+    padding-top: 20px;
+}
+
+.middle-down h3 {
+    font-size: 30px;
+}
+
+.middle-down h3 span {
+    color: maroon;
+}
+
+.middle-down p {
+    width: 55%;
+
+    margin-top: 5px;
+
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.middle-down-img img {
+    position: absolute;
+
+    right: 0;
+    top: 20px;
+
+    width: 200px;
+    height: 140px;
+
+    object-fit: contain;
+}
+
+.middle-down-hr {
+    width: 55%;
+
+    margin-top: 20px;
+}
+
+.middle-down-btn button {
+    width: 140px;
+    height: 30px;
+
+    margin-top: 0px;
+    margin-left: 80px;
+    border: none;
+
+    background-color: rgb(160, 28, 28);
+    color: white;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
         /* third right  */
 
 .third-right{
-    position: relative;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: start;
+
 }
-.qqq-img img{
-        position: absolute;
-        top: 20px;
-        left: 50px;
-        width: 120px;
-        height: 100px;
+.qqq-img,
+.national-img {
+    display: flex;
+    justify-content: center;
 }
-.national-img img{
-    position: absolute;
-    left: 180px;
-    top: 15px;
-    height: 110px;
-    width: 105px;
+.qqq-img img,
+.national-img img {
+    position: static;
+
+    width: 110px;
+    height: 100px;
+
+    object-fit: contain;
 }
-.third-right h3{
-    position: absolute;
-    font-size: 25px;
-    top: 130px;
-    left: 40px;
+.third-right h3 {
+    grid-column: 1 / -1;
+
+    margin: 20px 0 0;
+
+    font-size: 30px;
 }
 .third-right h3 span{
     color: maroon;
 }
-.third-right p{
-    position: absolute;
-     /* top: 150px; */
-    /* left: 50px; */
+.third-right-pera {
+    grid-column: 1 / -1;
+    font-size: 20px;
+    margin: 20px 0 0
 }
 .right-hr{
-    position: absolute;
     width: 210px;
-    top: 220px;
-    left: 80px;
 }
+.right-btn {
+    text-align: center;
+}
+
+.right-btn button {
+    width: 140px;
+    height: 30px;
+}
+
+
 .right-btn button{
-    position: absolute;
-    left: 250px;
-    top: 220px;
+    /* position: absolute; */
+    /* left: 170px;
+    top: 340px; */
     height: 30px;
     width: 140px;
     background-color: rgb(160, 28, 28);
     color: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.6);
 }
 /* Underline */
 
 .underline{
     width: 100%;
-    
-    margin-left: 150px;
-    margin-top: 110px;
+    margin: 40px 0 0;
+    text-align: center;
+}
+.underline img {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
 }
 /* fourth section */
 .sidebar{
@@ -502,7 +574,7 @@ a:hover{
 
 .sidebar-middle{
     width: 60%;
-    margin-left: 60px;
+    padding-left: 60px;
     padding-right: 30px;
 }
 .sidebar-middle h1{
@@ -553,8 +625,39 @@ a:hover{
     margin-left: 5px;
     margin-top: 5px;
 }
-.right-icon{
-    position: relative;
-    top: 10px;
-    border: 1px solid black;
+.right-img{
+    margin-top: 10px;
+    margin-left: 30px;
+    line-height: 60px;
 }
+.social-icon{
+    margin-left: 30px;
+}
+.social-hr{
+    width: 170px;
+    border: 1px solid #727272;
+    box-shadow: 0px 05px 05px rgba(0,0,0,0.9);
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+.social-icon h2{
+    font-size: 22px;
+    margin-left: 10px;
+    
+}
+.social-icon h2 span{
+    color: maroon;
+}
+.social-icon{
+    margin-top: 10px;
+    word-spacing: 15px;
+}
+.foot{
+    width: 100%;
+    height: 10px;
+    background-color: maroon;
+    margin-top: 40px;
+}
+
+  
