@@ -22,8 +22,7 @@
 
 .logo{
     flex-grow: 1;
-    justify-content: flex-end;
-    align-items: flex-end;
+    
     
 }
 .contact{
@@ -437,7 +436,6 @@ a:hover{
 .qqq-img img,
 .national-img img {
     position: static;
-
     width: 110px;
     height: 100px;
 
@@ -460,21 +458,14 @@ a:hover{
 }
 .right-hr{
     width: 210px;
+    margin-left: 40px;
+    transform: translateX(60px);
 }
 .right-btn {
     text-align: center;
+    transform: translateX(-60px);
 }
-
-.right-btn button {
-    width: 140px;
-    height: 30px;
-}
-
-
 .right-btn button{
-    /* position: absolute; */
-    /* left: 170px;
-    top: 340px; */
     height: 30px;
     width: 140px;
     background-color: rgb(160, 28, 28);
@@ -494,11 +485,15 @@ a:hover{
     margin: auto;
 }
 /* fourth section */
-.sidebar{
+.sidebar {
+    display: grid;
+    grid-template-columns: 280px 1fr 280px;
+    gap: 40px;
+
     margin-top: 50px;
-    display: flex;
-    flex-direction: row;
+    padding: 0 25px;
 }
+
                 /* side-bar left */
 .sidebar-left{
     
@@ -571,12 +566,11 @@ a:hover{
 }
 
 /* sidebar middle */
-
-.sidebar-middle{
-    width: 60%;
-    padding-left: 60px;
-    padding-right: 30px;
+.sidebar-middle {
+    width: auto;
+    padding: 0 30px;
 }
+
 .sidebar-middle h1{
     font-size: 38px;
 }
@@ -660,4 +654,811 @@ a:hover{
     margin-top: 40px;
 }
 
-  
+  /* Responsive section */
+
+  /* TEBLET RESPONSIVE */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    /*  HEADER */
+
+    .parent {
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact {
+        margin-right: 25px;
+    }
+
+    .contact h4 {
+        font-size: 22px;
+    }
+
+    .contact h2 {
+        font-size: 42px;
+    }
+
+    .contact p {
+        font-size: 19px;
+    }
+
+
+    /* NAVIGATION  */
+
+    .navgation {
+        height: 50px;
+        gap: 15px;
+        padding-right: 25px;
+    }
+
+    .navgation a {
+        font-size: 17px;
+    }
+
+
+    /*  MIDDLE  */
+
+    .middle {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .middle1 img,
+    .middle2 {
+        height: 380px;
+    }
+
+    .middle2 h2 {
+        width: 180px;
+        font-size: 25px;
+    }
+
+    .middle2 h6 {
+        right: 10px;
+        font-size: 19px;
+        padding-right: 10px;
+    }
+
+    .middle2 p {
+        left: 20px;
+        top: 75px;
+        font-size: 18px;
+    }
+
+    .contact-form {
+        left: 20px;
+        top: 85px;
+    }
+
+    .contact-form input {
+        width: 180px;
+    }
+
+    .textarea {
+        width: 80%;
+        left: 0;
+    }
+
+    .img {
+        right: 20px;
+    }
+
+    .Privacy {
+        top: 80px;
+    }
+
+    .Privacy p {
+        font-size: 16px;
+        left: 10px;
+    }
+
+    .Privacy button {
+        width: 220px;
+        right: 20px;
+        font-size: 16px;
+    }
+
+
+    /* THIRD SECTION */
+
+    .third-section {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 20px;
+        padding: 0 18px;
+    }
+
+    .third-left {
+        padding: 15px;
+    }
+
+    .third-left h3 {
+        font-size: 25px;
+    }
+
+    .third-left h4 {
+        font-size: 18px;
+    }
+
+    .pera1,
+    .pera2 {
+        font-size: 16px;
+        margin-right: 30px;
+    }
+
+    .img-left img {
+        width: 80px;
+        height: 110px;
+        right: 5px;
+    }
+
+    .hr {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .btn button {
+        margin-left: 25%;
+    }
+
+
+    /*  THIRD MIDDLE  */
+
+    .third-middle {
+        padding-right: 15px;
+    }
+
+    .middle-uper h3,
+    .middle-down h3 {
+        font-size: 26px;
+    }
+
+    .middle-uper p,
+    .middle-down p {
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .middle-uper-img img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .middle-down-img img {
+        width: 150px;
+        height: 110px;
+    }
+
+    .middle-uper-btn button,
+    .middle-down-btn button {
+        margin-left: 50px;
+    }
+
+
+    /*  THIRD RIGHT  */
+
+    .third-right {
+        grid-column: 1 / -1;
+
+        margin-top: 20px;
+        padding: 20px;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .third-right h3 {
+        font-size: 27px;
+    }
+
+    .third-right-pera {
+        font-size: 18px;
+    }
+
+    .right-hr {
+        margin: auto;
+        transform: none;
+    }
+
+    .right-btn {
+        transform: none;
+    }
+
+
+    /* SIDEBAR */
+
+    .sidebar {
+        grid-template-columns: 220px 1fr 220px;
+        gap: 20px;
+        padding: 0 18px;
+    }
+
+    .icon {
+        width: 220px;
+    }
+
+    .icon-bul {
+        margin-left: 120px;
+    }
+
+    .sidebar-middle {
+        padding: 0 15px;
+    }
+
+    .sidebar-middle h1 {
+        font-size: 30px;
+    }
+
+    .sidebar-middle p {
+        font-size: 16px;
+    }
+
+    .right-icon h2 {
+        font-size: 23px;
+    }
+
+    .right-icon p {
+        font-size: 17px;
+    }
+
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* HEADER */
+
+    .parent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 210px;
+    }
+
+    .contact {
+        width: 100%;
+        margin: 15px 0 0;
+        padding: 0 15px;
+        align-items: center;
+    }
+
+    .contact h4 {
+        font-size: 18px;
+    }
+
+    .contact h2 {
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+
+    /* NAVIGATION  */
+
+    .navgation {
+        height: auto;
+        min-height: 50px;
+
+        padding: 10px 15px;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        flex-wrap: wrap;
+    }
+
+    .navgation a {
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+
+
+    /* MIDDLE  */
+
+    .middle {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 15px;
+    }
+
+
+    /* IMAGE */
+
+    .middle1 img {
+        width: 100%;
+        height: auto;
+
+        min-height: 250px;
+        max-height: 350px;
+
+        object-fit: cover;
+    }
+
+
+    /* FORM */
+
+    .middle2 {
+        width: 100%;
+        height: auto;
+
+        min-height: 600px;
+
+        right: auto;
+        top: auto;
+    }
+
+    .middle2 h2 {
+        width: 170px;
+        font-size: 25px;
+        padding: 6px;
+    }
+
+    .middle2 h6 {
+        right: 5px;
+        top: 5px;
+
+        font-size: 20px;
+
+        padding-right: 5px;
+    }
+
+    .span {
+        font-size: 27px;
+    }
+
+    .middle2 p {
+        position: static;
+
+        margin: 20px 20px 0;
+
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+
+    /*  FORM  */
+
+    .contact-form {
+        position: static;
+
+        margin: 25px 20px 0;
+    }
+
+    .field {
+        margin: 12px 0;
+    }
+
+    .contact-form input {
+        width: 100%;
+        height: 35px;
+    }
+
+    .textarea {
+        position: static;
+
+        width: 100%;
+        height: 100px;
+
+        margin-top: 10px;
+    }
+
+    .textarea textarea {
+        width: 100%;
+        height: 100%;
+        resize: vertical;
+    }
+
+    .img {
+        position: static;
+
+        width: 100px;
+        height: 40px;
+
+        margin: 15px auto 0;
+
+        transform: rotate(8deg);
+    }
+
+    .img img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*  PRIVACY  */
+
+    .Privacy {
+        position: static;
+
+        margin-top: 30px;
+
+        padding: 0 20px;
+    }
+
+    .Privacy p {
+        position: static;
+
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .Privacy button {
+        position: static;
+
+        display: block;
+
+        width: 100%;
+        height: 45px;
+
+        margin-top: 20px;
+
+        font-size: 17px;
+    }
+
+
+    /*  THIRD SECTION */
+
+    .third-section {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-top: 30px;
+
+        padding: 0 15px;
+    }
+
+
+    /*  THIRD LEFT  */
+
+    .third-left {
+        padding: 20px 10px;
+
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .third-left h3 {
+        font-size: 25px;
+    }
+
+    .third-left h4 {
+        font-size: 18px;
+    }
+
+    .pera1,
+    .pera2 {
+        font-size: 17px;
+        line-height: 1.5;
+
+        margin-right: 0;
+    }
+
+    .img-left img {
+        position: static;
+
+        display: block;
+
+        width: 80px;
+        height: 110px;
+
+        margin: 15px auto;
+    }
+
+    .hr {
+        width: 50%;
+
+        margin: 20px auto;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .btn button {
+        margin: 0;
+    }
+
+
+    /* THIRD MIDDLE  */
+
+    .third-middle {
+        width: 100%;
+
+        padding: 0 10px;
+
+        border-right: none;
+    }
+
+
+    /* UPPER */
+
+    .middle-uper {
+        min-height: auto;
+
+        padding: 20px 0;
+
+        border-bottom: 1px solid #ccc;
+    }
+
+    .middle-uper h3 {
+        font-size: 25px;
+    }
+
+    .middle-uper p {
+        width: 100%;
+
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .middle-uper-img img {
+        position: static;
+
+        width: 140px;
+        height: 100px;
+
+        margin: 15px auto;
+    }
+
+    .middle-uper-hr {
+        width: 70%;
+
+        margin: 15px auto;
+    }
+
+    .middle-uper-btn {
+        text-align: center;
+    }
+
+    .middle-uper-btn button {
+        margin: 0;
+    }
+
+
+    /* DOWN */
+
+    .middle-down {
+        min-height: auto;
+
+        padding: 20px 0;
+    }
+
+    .middle-down h3 {
+        font-size: 25px;
+    }
+
+    .middle-down p {
+        width: 100%;
+
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .middle-down-img img {
+        position: static;
+
+        width: 150px;
+        height: 110px;
+
+        margin: 15px auto;
+    }
+
+    .middle-down-hr {
+        width: 70%;
+
+        margin: 15px auto;
+    }
+
+    .middle-down-btn {
+        text-align: center;
+    }
+
+    .middle-down-btn button {
+        margin: 0;
+    }
+
+
+    /*  THIRD RIGHT  */
+
+    .third-right {
+        grid-column: auto;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+
+        padding: 20px 10px;
+
+        border-top: 1px solid #ccc;
+    }
+
+    .third-right h3 {
+        font-size: 25px;
+
+        margin: 0;
+    }
+
+    .third-right-pera {
+        font-size: 17px;
+
+        margin: 10px 0 0;
+
+        line-height: 1.5;
+    }
+
+    .qqq-img img,
+    .national-img img {
+        width: 90px;
+        height: 80px;
+    }
+
+    .right-hr {
+        width: 70%;
+
+        margin: 15px auto;
+
+        transform: none;
+    }
+
+    .right-btn {
+        text-align: center;
+
+        transform: none;
+    }
+
+
+    /*  UNDERLINE  */
+
+    .underline {
+        margin-top: 30px;
+    }
+
+    .underline img {
+        width: 90%;
+    }
+
+
+    /*  SIDEBAR  */
+
+    .sidebar {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-top: 35px;
+
+        padding: 0 15px;
+    }
+
+
+    /* LEFT */
+
+    .sidebar-left {
+        width: 100%;
+    }
+
+    .icon-top {
+        font-size: 22px;
+    }
+
+    .icon {
+        width: 100%;
+
+        height: 70px;
+    }
+
+    .icon-h {
+        font-size: 28px;
+    }
+
+    .icon-bul {
+        margin-left: auto;
+
+        text-align: right;
+
+        padding-right: 10px;
+    }
+
+    .bottom {
+        margin-top: 30px;
+
+        font-size: 18px;
+    }
+
+
+    /* MIDDLE */
+
+    .sidebar-middle {
+        width: 100%;
+
+        padding: 0 10px;
+    }
+
+    .sidebar-middle h1 {
+        font-size: 30px;
+    }
+
+    .sidebar-middle p {
+        margin-top: 20px;
+
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    /* RIGHT */
+
+    .right-icon {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .right-icon h2 {
+        font-size: 23px;
+    }
+
+    .right-icon p {
+        font-size: 17px;
+    }
+
+    .right-icon button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .right-img {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    .social-icon {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    .social-hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-icon h2 {
+        margin-left: 0;
+    }
+
+
+    /*  FOOTER  */
+
+    .foot {
+        margin-top: 30px;
+    }
+
+}
