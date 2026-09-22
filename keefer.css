@@ -196,7 +196,7 @@ a:hover{
 .Privacy button{
     position: absolute;
     top: 80px;
-    right: 42px;
+    right: 30px;
     font-size: 20px;
     font-weight: 600;
     width: 275px;
@@ -432,14 +432,18 @@ a:hover{
 .national-img {
     display: flex;
     justify-content: center;
+    
 }
 .qqq-img img,
 .national-img img {
     position: static;
-    width: 110px;
+    width: 130px;
     height: 100px;
-
+    
     object-fit: contain;
+}
+.national-img img{
+    
 }
 .third-right h3 {
     grid-column: 1 / -1;
@@ -456,14 +460,15 @@ a:hover{
     font-size: 20px;
     margin: 20px 0 0
 }
-.right-hr{
+ .right-hr{
     width: 210px;
     margin-left: 40px;
-    transform: translateX(60px);
-}
+    transform: translateX(110px);
+    
+} 
 .right-btn {
     text-align: center;
-    transform: translateX(-60px);
+    transform: translateX(110px);
 }
 .right-btn button{
     height: 30px;
@@ -676,7 +681,10 @@ a:hover{
     }
 
     .contact h4 {
-        font-size: 22px;
+        font-size: 19.5px;
+    }
+    .hrz{
+        width: 240px;
     }
 
     .contact h2 {
@@ -704,31 +712,33 @@ a:hover{
     /*  MIDDLE  */
 
     .middle {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
+        grid-template-rows:1fr;
         gap: 18px;
         padding: 18px;
     }
 
     .middle1 img,
     .middle2 {
-        height: 380px;
+        height: 450px;
     }
 
     .middle2 h2 {
-        width: 180px;
-        font-size: 25px;
+        width: 200px;
+        font-size: 28px;
     }
 
     .middle2 h6 {
         right: 10px;
-        font-size: 19px;
+        font-size: 22px;
         padding-right: 10px;
     }
 
     .middle2 p {
         left: 20px;
         top: 75px;
-        font-size: 18px;
+        font-size: 20px;
+        right: 10px;
     }
 
     .contact-form {
@@ -737,7 +747,8 @@ a:hover{
     }
 
     .contact-form input {
-        width: 180px;
+        width: 300px;
+        height: 40px;
     }
 
     .textarea {
@@ -746,16 +757,18 @@ a:hover{
     }
 
     .img {
-        right: 20px;
+        right: 130px;
     }
 
     .Privacy {
-        top: 80px;
+        top: 90px;
     }
 
     .Privacy p {
-        font-size: 16px;
+        font-size: 18px;
         left: 10px;
+        top: 100px;
+        
     }
 
     .Privacy button {
@@ -769,7 +782,7 @@ a:hover{
 
     .third-section {
         grid-template-columns: 1fr 1.2fr;
-        gap: 20px;
+        gap:0 !important;
         padding: 0 18px;
     }
 
@@ -787,14 +800,15 @@ a:hover{
 
     .pera1,
     .pera2 {
-        font-size: 16px;
-        margin-right: 30px;
+        font-size: 15px;
+        padding-right: 10px;
     }
 
     .img-left img {
         width: 80px;
         height: 110px;
-        right: 5px;
+        right: 10px;
+        top: 70px;
     }
 
     .hr {
@@ -850,24 +864,46 @@ a:hover{
 
         grid-template-columns: 1fr 1fr;
     }
+    .qqq-img img,
+    .national-img img {
+        width: 160px;
+        height: 150px;
+        
+    }
 
     .third-right h3 {
-        font-size: 27px;
+        font-size: 30px;
+        margin-left: 30px;
+        text-align: center;
     }
 
     .third-right-pera {
-        font-size: 18px;
+        font-size: 20px;
+        margin-left: 60px;
+        margin-top: 5px;
     }
 
-    .right-hr {
-        margin: auto;
-        transform: none;
-    }
+    /* .right-hr {
+        width: 100%;
+        max-width: 210px;
+       align-items: center;
+       margin-bottom: 0px;
+    }  */
 
     .right-btn {
         transform: none;
+        grid-column: 1 /-1;
+        text-align: center;
+        /* margin: 0 auto !important; */
+        /* padding: 0; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* margin-top: 0 !important; */
     }
-
+    .right-btn button{
+        margin-top: 0 !important;
+    }
+    
 
     /* SIDEBAR */
 
@@ -1095,14 +1131,14 @@ a:hover{
     .Privacy {
         position: static;
 
-        margin-top: 30px;
+        margin-top: 0;
 
         padding: 0 20px;
     }
 
     .Privacy p {
         position: static;
-
+        
         font-size: 15px;
         line-height: 1.4;
     }
@@ -1115,7 +1151,7 @@ a:hover{
         width: 100%;
         height: 45px;
 
-        margin-top: 20px;
+        margin-top: 10px;
 
         font-size: 17px;
     }
@@ -1291,7 +1327,8 @@ a:hover{
 
         grid-template-columns: 1fr 1fr;
 
-        gap: 15px;
+        gap: 0 !important;
+        row-gap: 0 !important;
 
         padding: 20px 10px;
 
@@ -1300,8 +1337,8 @@ a:hover{
 
     .third-right h3 {
         font-size: 25px;
-
-        margin: 0;
+        text-align: center;
+        margin: 15px 0 0;
     }
 
     .third-right-pera {
@@ -1318,21 +1355,28 @@ a:hover{
         height: 80px;
     }
 
-    .right-hr {
-        width: 70%;
-
-        margin: 15px auto;
-
-        transform: none;
-    }
+     /* .right-hr {
+          width: 100%;
+        max-width: 210px;
+        transform: none !important;
+        grid-column: 1 /-1;
+        justify-self: center;
+        margin: 0px auto !important;
+        margin-bottom: 3px !important;
+    }  */
 
     .right-btn {
+        transform: none !important;
+        grid-column: 1 /-1;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    
         text-align: center;
-
-        transform: none;
+        margin-top: 0 !important;
     }
-
-
+    .right-btn button{
+        margin-top: 0 !important;
+    }
     /*  UNDERLINE  */
 
     .underline {
