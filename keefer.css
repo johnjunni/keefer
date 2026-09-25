@@ -762,14 +762,26 @@ a:hover{
     .middle1 img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        /* object-fit: cover; */
+    }
+    .middle2-h2{
+        font-size: 12px;
+        height: 35px;
+        width: 130px;
+    }
+    .main-h6 h6{
+        font-size: 20px;
+    }
+    .main-h6 span{
+        font-size: 20px;
     }
 
-    /* Form responsive */
+    /* Form  */
 
     .contact-form input {
         width: 100%;
         max-width: 220px;
+
     }
 
     .textarea {
@@ -777,7 +789,9 @@ a:hover{
         max-width: 490px;
         margin-left: 20px;
     }
-
+    .form-img-icon{
+        margin-top: 50px;
+    }
     .Privacy button {
         width: 220px;
     }
@@ -1092,29 +1106,30 @@ a:hover{
     }
 
     .textarea {
-        width: calc(100% - 30px);
+        width: calc(100% - 50px);
         height: 60px;
         margin-left: 15px;
     }
 
     .form-img-icon {
-        margin-left: 5px;
+        margin-right: 5px;
     }
 
 
     /* PRIVACY */
 
     .Privacy {
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
-        justify-content: center;
-        gap: 15px;
+        justify-content: start;
+        gap: 55px;
         height: auto;
-        padding: 15px;
+        padding: 30px;
     }
 
     .Privacy p {
         font-size: 15px;
+        padding-top: 15px;
     }
 
     .Privacy button {
@@ -1170,7 +1185,7 @@ a:hover{
     }
 
     .img-left img {
-        width: 180px;
+        width: 110px;
         height: 130px;
     }
 
