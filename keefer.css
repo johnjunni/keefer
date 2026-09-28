@@ -702,6 +702,10 @@ a:hover{
         gap: 25px;
         padding: 0 25px;
     }
+    .middle-uper-img,
+    .middle-down-img{
+        min-width: 150px;
+    }
 
     /*  SIDEBAR  */
 
