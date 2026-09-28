@@ -191,7 +191,7 @@ a:hover{
 }
 .form-img-icon{
     margin:25px 0 0 10px; 
-    transform: rotate(12deg);
+    transform: rotate(18deg);
     height: 40px;
 }
 .form-img-icon img{
@@ -906,7 +906,7 @@ a:hover{
         justify-content: space-between;
         gap: 15px;
         margin-top: 10px;
-        margin-left: 15em;
+        margin-left: 12em;
         padding: 20px;
         border-top: 1px solid #ccc;
     }
@@ -1123,19 +1123,13 @@ a:hover{
         margin-right: 5px;
         
     }
-    .form-img{
-       display: flex;
-       flex-direction: column;
     
-       
-        
-    }
     .form-img img {
-        position: relative;
-        top:33px;
-        left: 70px;
-        width: 60px;
-        height: 20px;
+        /* position: relative;
+        top:0px;
+        left: 70px; */
+        width: 100px;
+        height: 40px;
         /* margin: 10px auto; */
         transform: rotate(8deg);
         
